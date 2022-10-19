@@ -32,3 +32,11 @@ read name
 
 echo My name is $name.
 
+################################################
+
+
+read -p "Enter first value a :" a
+read -p "Enter second value b :" b
+
+c=$(($a+$b))
+echo a + b = $c # echo a + b = $(($a+$b))
