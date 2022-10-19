@@ -26,3 +26,9 @@ ab=23456
 echo ${#ab}
 
 ################################################
+
+echo "Enter your name"
+read name
+
+echo My name is $name.
+
