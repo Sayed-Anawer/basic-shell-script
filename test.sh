@@ -52,10 +52,15 @@ echo Circumference of circle is $circumference
 
 ################################################
 
-# #find the area and circumference of circle
+#find the area and circumference of circle
 
-# read -p "Enter the value of radius :" radius
-# area=$(echo "scale=2; 3.14 * $radius * $radius" | bc)
-# circumference=$(echo "2 * 3.14 * $radius" | bc)
-# echo Area of circle is $area
-# echo Circumference of circle is $circumference
+read -p "Enter the value of radius :" radius
+area=$(echo "scale=2; 3.14 * $radius * $radius" | bc)
+circumference=$(echo "2 * 3.14 * $radius" | bc)
+echo Area of circle is $area
+echo Circumference of circle is $circumference
+
+
+################################################
+
+
