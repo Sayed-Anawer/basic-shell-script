@@ -9,7 +9,7 @@ echo eq = $eq
 
 if [ $eq -gt 0 ]
 then
-     echo "Roots are real and unequal"
+    echo "Roots are real and unequal"
     r1=$(echo "scale=2; (-$b + sqrt($eq)) / (2 * $a)" | bc)
     r2=$(echo "scale=2; (-$b -sqrt($eq)) / (2 * $a)" | bc)
 
