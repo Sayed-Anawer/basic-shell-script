@@ -125,3 +125,88 @@
 
 
 # Array in Shell
+
+#Write a Shell program to find the sum of odd and even numbers.
+
+# read -p "Enter the value of n : " n
+
+# for (( i=1; i<=n; i++ ))
+# do
+#     read -p "Enter the value of $i number : " num
+#     arr[$i]=$num
+# done
+
+# sum1=0
+# sum2=0
+# for (( i=1; i<=n; i++ ))
+# do
+#     if [ $((arr[$i]%2)) -eq 0 ]
+#     then
+#         sum1=$((sum1+arr[$i]))
+#     else
+#         sum2=$((sum2+arr[$i]))
+#     fi
+# done
+# echo "Sum of even numbers is $sum1 and odd numbers is $sum2"
+
+# Write a Shell Program to find the largest element of an array.
+
+# read -p "Enter the value of n : " n
+
+# for (( i=1; i<=n; i++ ))
+# do
+
+#     read -p "Enter the value of $i number : " num
+#     arr[$i]=$num
+# done
+
+# large=${arr[1]}
+# for (( i=1; i<=n; i++ ))
+# do
+#     if [ ${arr[$i]} -gt $large ]
+#     then
+#         large=${arr[$i]}
+#     fi
+# done
+# echo "Largest number is $large"
+
+# Write a Shell Program to find the smallest element of an array.
+
+# read -p "Enter the value of n : " n
+
+# for (( i=1; i<=n; i++ ))
+# do
+
+#     read -p "Enter the value of $i number : " num
+#     arr[$i]=$num
+# done
+
+# small=${arr[1]}
+# for (( i=1; i<=n; i++ ))
+# do
+#     if [ ${arr[$i]} -lt $small ]
+#     then
+#         small=${arr[$i]}
+#     fi
+# done
+# echo "Smallest number is $small"
+
+# Write a shell program to display odd position numbers (using For loop).
+
+# read -p "Enter the value of n : " n
+
+# for (( i=1; i<=n; i++ ))
+# do
+#     read -p "Enter the value of $i number : " num
+#     arr[$i]=$num
+# done
+
+# echo "Odd position numbers are : "
+# for (( i=1; i<=n; i++ ))
+# do
+#     if [ $((i%2)) -ne 0 ]
+#     then
+#         echo -n "${arr[$i]} "
+#     fi
+# done
+
