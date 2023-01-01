@@ -1,12 +1,12 @@
 #!/bin/bash
 
 USER_SYMBOL=X
-COMP_SYMBOL=O
+USER_SYMBOL2=O
 
 S=([1]=1 [2]=2 [3]=3 [4]=4 [5]=5 [6]=6 [7]=7 [8]=8 [9]=9)
 
 draw() {
-  echo "User: ${USER_SYMBOL}, Comp: ${COMP_SYMBOL}"
+  echo "User: ${USER_SYMBOL}, Comp: ${USER_SYMBOL2}"
   echo " ${S[7]} | ${S[8]} | ${S[9]} "
   echo "---+---+---"
   echo " ${S[4]} | ${S[5]} | ${S[6]} "
@@ -41,7 +41,7 @@ user2() {
     echo "Already occupied"
     user2
   fi
-  S[$CHOICE]=$COMP_SYMBOL
+  S[$CHOICE]=$USER_SYMBOL2
 }
 
 player() {
@@ -80,9 +80,11 @@ check_winner() {
 }
 
 draw
+
 while true; do
   user
   check_winner
+  draw
   user2
   check_winner
   draw
